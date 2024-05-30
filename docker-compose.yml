@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: dev-node-app-nginx
+    hostname: devnodeappwebsrv
+    image: nginx:latest
+    environment:
+      - PGSSLMODE=disable # disbale ssl 
+    restart: always
+    ports:
+      - "3000:80"
+    volumes:
+      - ./conf.d/nginx.conf:/etc/nginx/nginx.conf  
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - node
+    networks:
+      - wingsfinnet
+
+  node:
+    container_name: dev-node-app
+    hostname: devnodeappsrv
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+      - ./logs:/var/log/node
+    ports:
+      - "3005:3000"
+    networks:
+      - wingsfinnet
+
+networks:
+  wingsfinnet:
+    external: true

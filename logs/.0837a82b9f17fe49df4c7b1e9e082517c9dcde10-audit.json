@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "logs/.0837a82b9f17fe49df4c7b1e9e082517c9dcde10-audit.json",
+    "files": [
+        {
+            "date": 1716106992651,
+            "name": "logs/exception-2024-05-19.log",
+            "hash": "0ae470b115d41f63e3a4ed1a5b6b6cdb29e53522f38e0facad925971079ab414"
+        },
+        {
+            "date": 1716191319540,
+            "name": "logs/exception-2024-05-20.log",
+            "hash": "e55044eb6fbe73c664550eefdfd93c8b91e3e4fdb2523bcaeb04c00b5f0a164e"
+        },
+        {
+            "date": 1716267290773,
+            "name": "logs/exception-2024-05-21.log",
+            "hash": "76cf391db9dae425c6ac6af1524c29e012f557c9c79cfc6cf91d7d0d98056dae"
+        },
+        {
+            "date": 1716439841293,
+            "name": "logs/exception-2024-05-23.log",
+            "hash": "3f7b56e6f66b1fabe3b8800e87cba3e622e412d2f8f2d3079b67f28f2d6bdece"
+        },
+        {
+            "date": 1716697265430,
+            "name": "logs/exception-2024-05-26.log",
+            "hash": "ba54624dc3f510e59e106d371c298040b55ceb65e75a86487a4ebb029b23bb92"
+        },
+        {
+            "date": 1716955048419,
+            "name": "logs/exception-2024-05-29.log",
+            "hash": "b2f43e02318ca84da08eedfc9411e1d0098ded2b82b6ad699f3a505ee2fc8694"
+        },
+        {
+            "date": 1717042363047,
+            "name": "logs/exception-2024-05-30.log",
+            "hash": "2c354d774f4f2bd9f92a3d5a1a93fb2ed3eac397089655e57929192d51d0f85f"
+        }
+    ],
+    "hashType": "sha256"
+}
